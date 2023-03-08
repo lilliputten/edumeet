@@ -111,8 +111,8 @@
 		"eject": "react-scripts eject",
 		"electron": "electron --no-sandbox .",
 		"dev": "nf start -p 3000",
-		"lint": "eslint ./ --ext .js,.jsx,.ts,.tsx; exit 0",
-		"lint-fix": "eslint ./ --fix --ext .js,.jsx,.ts,.tsx; exit 0",
+		"lint": "eslint ./ --ext .js,.jsx,.ts,.tsx",
+		"lint-fix": "eslint ./ --fix --ext .js,.jsx,.ts,.tsx",
 		"gen-config-docs": "node --loader ts-node/esm src/config.ts && eslint -c .eslintrc.json public/config/config.example.js --fix"
 	}
 }
