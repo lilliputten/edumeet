@@ -250,7 +250,7 @@ function run()
 
 	global.CLIENT = roomClient;
 
-	render(
+	render((
 		<Provider store={store}>
 			<MuiThemeProvider theme={theme}>
 				<IntlProvider value={intl}>
@@ -273,8 +273,9 @@ function run()
 					</PersistGate>
 				</IntlProvider>
 			</MuiThemeProvider>
-		</Provider>,
-		document.getElementById('edumeet')
+		</Provider>
+	),
+	document.getElementById('edumeet')
 	);
 }
 

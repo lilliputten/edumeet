@@ -8,16 +8,22 @@
     {
       "name": "Launch Chrome",
       "request": "launch",
-      "type": "pwa-chrome",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
+      // "type": "pwa-chrome",
+      "type": "chrome",
+      // "url": "https://localhost:4443/is8sx20r",
+      "url": "https://localhost:4443/is8sx20r",
+      "webRoot": "${workspaceFolder}",
+      "args": [
+        "--remote-debugging-port=9222"
+      ]
     },
     {
       "name": "Attach to Chrome",
       "port": 9222,
       "request": "attach",
-      "type": "pwa-chrome",
-      "urlFilter": "http://localhost:3000/*", // use urlFilter instead of url!
+      "type": "chrome",
+      // "urlFilter": "https://localhost:4443/*",
+      "urlFilter": "https://localhost:3000/*",
       "webRoot": "${workspaceFolder}"
     },
     {

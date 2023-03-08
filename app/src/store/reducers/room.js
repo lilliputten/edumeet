@@ -25,7 +25,7 @@ const initialState =
 	rolesManagerPeer              : null, // peerId
 	settingsOpen                  : false,
 	extraVideoOpen                : false,
-	hideSelfView                  : false,
+	hideSelfView                  : true,
 	rolesManagerOpen              : false,
 	helpOpen                      : false,
 	aboutOpen                     : false,
